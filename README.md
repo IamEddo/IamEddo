@@ -92,7 +92,7 @@ Bem-vindo ao meu perfil!
 ---
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/IamEddo/IamEddo/main/dist/contribution-pacman.svg" alt="pacman animation"/>
+  <img src="https://raw.githubusercontent.com/IamEddo/IamEddo/output/pacman-contribution-graph.svg" alt="pacman animation"/>
 </p>
 
 ---
