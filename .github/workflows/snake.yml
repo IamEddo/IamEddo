@@ -18,9 +18,9 @@ jobs:
       # Pega o código do seu repositório
       - uses: actions/checkout@v3
 
-      # GERA A ANIMAÇÃO DO PAC-MAN (usando a Action correta e funcional)
+      # GERA A ANIMAÇÃO DO PAC-MAN (aqui está a versão funcional)
       - name: Generate Pac-Man Animation
-        uses: joshlrogers/joshlrogers-contributions-action@v1
+        uses: HwangTaehyun/contributions-pacman@v1
         with:
           # Seu nome de usuário do GitHub
           user: ${{ github.repository_owner }}
