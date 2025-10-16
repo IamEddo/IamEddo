@@ -15,7 +15,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      # Pega o código do seu repositório
+      # Pega o código do seu repositório para que a Action possa alterá-lo
       - uses: actions/checkout@v3
 
       # Gera a animação da cobrinha
@@ -25,7 +25,16 @@ jobs:
           # Seu nome de usuário do GitHub (pega automaticamente)
           github_user_name: ${{ github.repository_owner }}
 
-          # Arquivos que serão gerados
+          # Arquivos que serão gerados na pasta "dist"
           outputs: |
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+
+      # PASSO NOVO E CRUCIAL: Faz o push dos arquivos gerados para o repositório
+      - name: Push generated files to the repo
+        uses: crazy-max/ghaction-github-pages@v3.1.0
+        with:
+          # O diretório que contém os arquivos a serem publicados (a nossa pasta dist)
+          build_dir: dist
+          # O token para permitir que a Action escreva no seu repositório
+          github_token: ${{ secrets.GITHUB_TOKEN }}
