@@ -18,15 +18,15 @@ jobs:
       # Pega o código do seu repositório
       - uses: actions/checkout@v3
 
-      # GERA A ANIMAÇÃO DO PAC-MAN (aqui está a mudança)
+      # GERA A ANIMAÇÃO DO PAC-MAN (usando a Action correta e funcional)
       - name: Generate Pac-Man Animation
-        uses: anzhihe/anzhihe-contributions-action@v1
+        uses: joshlrogers/joshlrogers-contributions-action@v1
         with:
-          # Seu nome de usuário do GitHub (pega automaticamente)
+          # Seu nome de usuário do GitHub
           user: ${{ github.repository_owner }}
-          # O diretório de saída (para manter a pasta dist)
+          # O diretório de saída
           output_dir: dist
-          # O nome do novo arquivo de animação
+          # O nome do arquivo de animação
           file_name: contribution-pacman.svg
 
       # Faz o push da nova animação para o repositório
