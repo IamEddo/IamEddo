@@ -87,3 +87,9 @@ Bem-vindo ao meu perfil!
 ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=IamEddo&show_icons=true&hide_border=true)
 
 ---
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/iameddo/iameddo/main/dist/github-contribution-grid-snake.svg" alt="snake animation"/>
+</p>
+
+---
