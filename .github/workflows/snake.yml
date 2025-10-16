@@ -3,10 +3,7 @@ name: Generate Snake Animation
 
 # Define quando a Action será executada
 on:
-  # Permite que você rode a Action manualmente na aba "Actions"
   workflow_dispatch:
-  
-  # Roda automaticamente a cada 6 horas
   schedule:
     - cron: "0 */6 * * *"
 
@@ -24,17 +21,17 @@ jobs:
         with:
           # Seu nome de usuário do GitHub (pega automaticamente)
           github_user_name: ${{ github.repository_owner }}
-
           # Arquivos que serão gerados na pasta "dist"
           outputs: |
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
 
-      # PASSO NOVO E CRUCIAL: Faz o push dos arquivos gerados para o repositório
+      # Faz o push dos arquivos gerados para o repositório
       - name: Push generated files to the repo
         uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
-          # O diretório que contém os arquivos a serem publicados (a nossa pasta dist)
+          # O diretório que contém os arquivos a serem publicados
           build_dir: dist
+        env:
           # O token para permitir que a Action escreva no seu repositório
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
