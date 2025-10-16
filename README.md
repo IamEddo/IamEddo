@@ -6,10 +6,10 @@ Bem-vindo ao meu perfil!
 ---
 
 ## Sobre mim
-- 🔭 Atualmente trabalhando em: **Desenvolvimento de sistemas da Organização Paranaense de Engenharia Civil**
+- 🔭 Atualmente trabalhando em: **Desenvolvimento de sistemas na ORPEC**
 - 🌱 Atualmente aprendendo: **JavaScript, Python e Kotlin**
 - 👯 Aberto a colaborar em: projetos de código aberto, backend, frontend, DevOps
-- ⚡ Curiosidade: Gosto de analisar carrocerias e chassis de ônibus
+- ⚡ Curiosidade: Sou um entusiasta de ônibus, especialmente de chassis
 - 📫 Como me encontrar: veja a seção "Contato" abaixo
 
 ---
@@ -83,13 +83,16 @@ Bem-vindo ao meu perfil!
 ---
 
 ## Estatísticas (GitHub)
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=IamEddo&layout=compact)
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=IamEddo&show_icons=true&hide_border=true)
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=IamEddo&layout=compact&theme=dracula&hide_border=true" alt="Top Langs"/>
+  <br>
+  <img src="https://github-readme-stats.vercel.app/api?username=IamEddo&show_icons=true&theme=dracula&hide_border=true" alt="GitHub Stats"/>
+</p>
 
 ---
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/IamEddo/IamEddo/main/dist/github-contribution-grid-snake.svg" alt="snake animation"/>
+  <img src="https://raw.githubusercontent.com/IamEddo/IamEddo/main/dist/github-contribution-grid-snake-dark.svg" alt="snake animation"/>
 </p>
 
 ---
