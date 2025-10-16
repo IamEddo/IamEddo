@@ -20,6 +20,7 @@ jobs:
         uses: abozanona/pacman-contribution-graph@main
         with:
           github_user_name: ${{ github.repository_owner }}
+          background_color: 000000
 
       # Envia o arquivo gerado para uma branch chamada "output"
       - name: Push pacman-contribution-graph.svg to the output branch
