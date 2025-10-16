@@ -10,22 +10,22 @@ on:
 # Tarefas que a Action vai executar
 jobs:
   build:
-    # AQUI ESTÁ A CORREÇÃO: Concede permissões de escrita para este job
     permissions:
       contents: write
       
     runs-on: ubuntu-latest
     steps:
-      # Pega o código do seu repositório para que a Action possa alterá-lo
+      # Pega o código do seu repositório
       - uses: actions/checkout@v3
 
       # Gera a animação da cobrinha
       - name: Generate Snake Animation
         uses: Platane/snk@v3
         with:
-          # Seu nome de usuário do GitHub (pega automaticamente)
+          # Seu nome de usuário do GitHub
           github_user_name: ${{ github.repository_owner }}
-          # Arquivos que serão gerados na pasta "dist"
+          
+          # AQUI ESTÁ A CORREÇÃO: Pede para gerar OS DOIS arquivos
           outputs: |
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
@@ -34,8 +34,6 @@ jobs:
       - name: Push generated files to the repo
         uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
-          # O diretório que contém os arquivos a serem publicados
           build_dir: dist
         env:
-          # O token para permitir que a Action escreva no seu repositório
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
