@@ -10,6 +10,10 @@ on:
 # Tarefas que a Action vai executar
 jobs:
   build:
+    # AQUI ESTÁ A CORREÇÃO: Concede permissões de escrita para este job
+    permissions:
+      contents: write
+      
     runs-on: ubuntu-latest
     steps:
       # Pega o código do seu repositório para que a Action possa alterá-lo
