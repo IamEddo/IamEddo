@@ -92,7 +92,7 @@ Bem-vindo ao meu perfil!
 ---
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/IamEddo/IamEddo/main/dist/github-contribution-grid-snake-dark.svg" alt="snake animation"/>
+  <img src="https://raw.githubusercontent.com/IamEddo/IamEddo/main/dist/github-contribution-grid-snake-dark.svg" alt="snake animation dark"/>
 </p>
 
 ---
