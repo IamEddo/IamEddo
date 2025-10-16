@@ -1,5 +1,5 @@
-# Nome da GitHub Action
-name: Generate Snake Animation
+# Nome da sua GitHub Action
+name: Generate Contribution Animation
 
 # Define quando a Action será executada
 on:
@@ -10,24 +10,29 @@ on:
 # Tarefas que a Action vai executar
 jobs:
   build:
+    permissions:
+      contents: write
+      
     runs-on: ubuntu-latest
     steps:
-      # Passo 1: Pega o código do seu repositório
+      # Pega o código do seu repositório
       - uses: actions/checkout@v3
 
-      # Passo 2: Gera a animação da cobrinha (igual a antes)
-      - name: Generate Snake Animation
-        uses: Platane/snk@v3
+      # GERA A ANIMAÇÃO DO PAC-MAN (aqui está a mudança)
+      - name: Generate Pac-Man Animation
+        uses: anzhihe/anzhihe-contributions-action@v1
         with:
-          github_user_name: ${{ github.repository_owner }}
-          outputs: |
-            dist/github-contribution-grid-snake.svg
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+          # Seu nome de usuário do GitHub (pega automaticamente)
+          user: ${{ github.repository_owner }}
+          # O diretório de saída (para manter a pasta dist)
+          output_dir: dist
+          # O nome do novo arquivo de animação
+          file_name: contribution-pacman.svg
 
-      # Passo 3: FAZ O PUSH PARA A BRANCH 'MAIN' (A FORMA CORRETA)
-      - name: Push snake animation
+      # Faz o push da nova animação para o repositório
+      - name: Push pacman animation
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "chore: generate snake animation"
+          commit_message: "chore: generate pacman animation"
           branch: main
-          file_pattern: dist/*.svg
+          file_pattern: dist/contribution-pacman.svg
