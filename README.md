@@ -52,7 +52,7 @@ Bem-vindo ao meu perfil!
 
 ## Projetos em destaque
 - [Runas Perdidas Game](https://github.com/IamEddo/Runas-perdidas-game) — Jogo estilo RPG, sendo produzido em Python.
-- [Aplicativo de Notas para Filmes](https://github.com/IamEddo/CineList) — Aplicativo mobile desenvolvido em Kotlin.
+- [CineList](https://github.com/IamEddo/CineList) — Aplicativo mobile sobre notas para filmes, desenvolvido em Kotlin.
 - [Análise de Dados](https://github.com/IamEddo/The-Boston-Housing-Dataset) — Relatório de uma análise de dados realizada da área de Boston.
 
 ---
