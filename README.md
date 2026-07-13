@@ -81,13 +81,6 @@ Bem-vindo ao meu perfil!
 
 ---
 
-## Estatísticas (GitHub)
-<p align="center">
-  <img src="https://github-stats-api.vercel.app/api?username=IamEddo&show_icons=true&theme=dracula" alt="GitHub Stats"/>
-</p>
-
----
-
 <p align="center">
   <img src="https://raw.githubusercontent.com/IamEddo/IamEddo/output/pacman-contribution-graph.svg" alt="pacman animation"/>
 </p>
